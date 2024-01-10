@@ -10,7 +10,7 @@ body {
     background-color: #fff;
     max-width: 275px;
     border-radius: 15px;
-    padding: 15px;
+    padding: 10px;
     margin-top: 70px;
     margin-left: 500px;
 }
@@ -27,10 +27,22 @@ body {
 
 .content > h2{
     font-weight: 700;
-    font-size: 24px;
+    font-size: 23px;
 }
 
 .content > p {
     font-weight: 400;
     color: hsl(220, 15%, 55%);
 }
+
+/* @media (min-width: 0px) and (max-width: 1400px) {
+    .card {
+        margin: 0;
+    }
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+} */
