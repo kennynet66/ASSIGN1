@@ -1,0 +1,155 @@
+@import url(https://fonts.google.com/specimen/Kumbh+Sans);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.main-content {
+    width: 80vw;
+    height: 100vh;
+}
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid hsl(223, 64%, 98%);
+}
+.navlinks {
+    display: flex;
+}
+.navlinks > li {
+    list-style-type: none;
+    margin-right: 20px;
+    font-weight: 700;
+    color: hsl(220, 14%, 75%);
+}
+
+.action {
+    display: flex;
+    align-items: center;
+}
+
+.profile > img {
+    width: 50px;
+    margin-left: 20px;
+}
+
+.content {
+    display: flex;
+    margin-top: 60px;
+    justify-content: space-around;
+}
+
+.images > img {
+    width: 350px;
+    height: 350px;
+    border-radius: 10px;
+}
+
+.menuimages {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.menuimages > img {
+    border-radius: 5px;
+}
+
+.selected {
+    border: 2px solid hsl(26, 100%, 55%);
+    opacity: 0.5;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    justify-self: start;
+    margin-left: 70px;
+    margin-right: 60px;
+}
+
+.description h4 {
+    font-weight: 700;
+    font-size: 15px;
+    color: hsl(26, 100%, 55%);
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.description > h1 {
+    font-weight: 700;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.description > p {
+    font-size: 17px;
+    color: hsl(219, 9%, 45%);
+    font-weight: 700;
+}
+.info {
+    display: flex;
+    align-items: center;
+    flex-basis: 100px;
+}
+.info > h1 {
+    font-size: 35px;
+    margin-right: 20px;
+}
+
+.info > h4 {
+    background-color: hsl(25, 100%, 94%);
+    padding: 4px 5px;
+    font-weight: 700;
+    letter-spacing: 0;
+    border-radius: 5px;
+    margin: 0;
+}
+
+.discount >h3 {
+    font-weight: 700;
+    color: hsl(220, 14%, 75%);
+    text-decoration: line-through;
+    margin: 0;
+}
+
+.buttons {
+    display: flex;
+    margin: 10px;
+}
+.quantity {
+    margin-right: 10px;
+    display: flex;
+    background-color: hsl(223, 64%, 98%);
+    justify-content: space-between;
+    align-items: center;
+}
+.quantity > p {
+    margin: 10px;
+}
+
+.cont {
+    background-color: hsl(26, 100%, 55%);
+    padding: 10px;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+.min, .add {
+    color: hsl(26, 100%, 55%);
+    font-size: 20px;
+}
