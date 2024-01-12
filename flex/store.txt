@@ -1,0 +1,159 @@
+  <main>
+<div>
+  <!-- The page content with the cards and toggle button for light and dark mode -->
+  <div>
+    <!-- Header contains the page title and toggle btn -->
+    <div class="header">
+      <div class="title">
+        <h1>Social Media Dashboard</h1>
+        <p>Total Followers: 23,004</p>
+      </div>
+      <div class="toggle">
+        <p>Dark Mode</p>
+      </div>
+    </div>
+    <!-- The cards -->
+    <div class="appcards">
+      <!-- Facebook card -->
+      <div class="fcard">
+        <div class="card">
+          <p><img src="./images/icon-facebook.svg" alt="">@nathanf</p>
+          <h1>1987</h1>
+          <code>FOLLOWERS</code>
+          <h4>12 Today</h4>
+        </div>
+      </div>
+      <!-- Twitter card -->
+      <div class="tcard">
+        <div class="card">
+          <p><img src="./images/icon-twitter.svg" alt="">@nathanf</p>
+          <h1>1044</h1>
+          <code>FOLLOWERS</code>
+          <h4>12 Today</h4>
+        </div>
+      </div>
+      <!-- Instagram card -->
+      <div class="icard">
+        <div class="card">
+          <p><img src="./images/icon-instagram.svg" alt="">@nathanf</p>
+          <h1>11K</h1>
+          <code>FOLLOWERS</code>
+          <h4>12 Today</h4>
+        </div>
+      </div>
+      <!-- Youtube card -->
+      <div class="ycard">
+        <div class="card" id="card">
+          <p><img src="./images/icon-youtube.svg" alt="">@nathanf</p>
+          <h1>8239</h1>
+          <code>SUBSCRIBERS</code>
+          <h4>12 Today</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- h1 splicer -->
+  <div class="splicer">
+    <h1>Overview - Today</h1>
+  </div>
+  <div class="statcards">
+    <!-- Stat card 1 -->
+    <div class="fviews">
+      <div class="nostats">
+        <p>Page Views</p>
+        <h1>87</h1>
+      </div>
+      <div class="iconstats">
+        <img src="./images/icon-facebook.svg" alt="">
+        <p>3%</p>
+      </div>
+    </div>
+    <!-- stat cart 2 -->
+    
+    <div class="fviews">
+      <div class="nostats">
+        <p>Page Views</p>
+        <h1>52</h1>
+      </div>
+      <div class="iconstats">
+        <img src="./images/icon-facebook.svg" alt="">
+        <p>3%</p>
+      </div>
+    </div>
+<!-- stat card 3 -->
+    
+    <div class="fviews">
+      <div class="nostats">
+        <p>Page Views</p>
+        <h1>5462</h1>
+      </div>
+      <div class="iconstats">
+        <img src="./images/icon-instagram.svg" alt="">
+        <p>3%</p>
+      </div>
+    </div>
+
+    <!-- stat card 4 -->
+    
+    <div class="fviews">
+      <div class="nostats">
+        <p>Page Views</p>
+        <h1>52K</h1>
+      </div>
+      <div class="iconstats">
+        <img src="./images/icon-instagram.svg" alt="">
+        <p>3%</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="statcards">
+    <!-- stat card 1 -->
+    <div class="fviews">
+      <div class="nostats">
+        <p>Page Views</p>
+        <h1>87</h1>
+      </div>
+      <div class="iconstats">
+        <img src="./images/icon-twitter.svg" alt="">
+        <p>3%</p>
+      </div>
+    </div>
+
+    <!-- stat card 2 -->
+    <div class="fviews">
+      <div class="nostats">
+        <p>Page Views</p>
+        <h1>87</h1>
+      </div>
+      <div class="iconstats">
+        <img src="./images/icon-twitter.svg" alt="">
+        <p>3%</p>
+      </div>
+    </div>
+    <!-- stat card 3 -->
+    <div class="fviews">
+      <div class="nostats">
+        <p>Page Views</p>
+        <h1>87</h1>
+      </div>
+      <div class="iconstats">
+        <img src="./images/icon-youtube.svg" alt="">
+        <p>3%</p>
+      </div>
+    </div>
+    
+    <!-- stat card 4 -->
+    <div class="fviews">
+      <div class="nostats">
+        <p>Page Views</p>
+        <h1>87</h1>
+      </div>
+      <div class="iconstats">
+        <img src="./images/icon-youtube.svg" alt="">
+        <p>3%</p>
+      </div>
+    </div>
+  </div>
+</div>
+</main>

@@ -1,0 +1,149 @@
+
+/* .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} */
+
+.navbar {
+    background-color: hsl(232, 19%, 15%);
+    height: 30vh;
+    width: 100vw;
+}
+.header {
+    width: 70vw;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.title {
+    font-weight: 700;
+}
+.title > h1 {
+    font-size: 26px;
+}
+.title > p  {
+    color: hsl(228, 34%, 66%);
+    font-size: 14px;
+}
+
+.appcards {
+    gap: 20px;
+    display: flex;
+}
+
+.fcard, .tcard, .icard, .ycard {
+    background-color: hsl(228, 28%, 20%);
+    text-align: center;
+    padding: 20px 50px;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+/* Facebook card */
+.fcard {
+    border-top: 4px solid hsl(208, 92%, 53%);
+}
+
+/* Twitter card */
+.tcard {
+    border-top: 4px solid hsl(203, 89%, 53%);
+}
+
+/* Instagram card */
+.icard {
+    border-top: 2px solid;
+    border-image: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%)) 1;
+}
+
+
+/* youtube card */
+.ycard {
+    border-top: 4px solid hsl(348, 97%, 39%);
+}
+
+.card > code {
+    letter-spacing: 0.1cm;
+}
+
+.card > p, code, h4 {
+    font-weight: 400;
+    font-size: 14px;
+    /* margin: 10px; */
+}
+
+.card > p, code {
+    color: hsl(228, 34%, 66%);
+}
+
+.card > h1 {
+    margin-bottom: 0;
+    font-size: 55px;
+    color: #ffffff;
+}
+
+.card > h4 {
+    color: hsl(163, 72%, 41%);
+    margin-top: 20px;
+}
+
+.card > code {
+    margin-top: 0;
+}
+.card > p {
+    display: flex;
+    align-items: center;
+}
+.card > p > img {
+    margin-right: 5px;
+}
+
+.content {
+    border-radius: 2px solid red;
+}
+
+.splicer {
+    margin-top: 20px;
+}
+
+.splicer > h1 {
+    color: white;
+    font-size: 26px;
+}
+
+.statcards {
+    width: 70vw;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.fviews {
+    background-color: hsl(228, 28%, 20%);
+    padding: 10px 36px;
+    border-radius: 5px;
+    display: flex;
+}
+
+.nostats {
+    margin-right: 50px;
+}
+
+.nostats > p  {
+    font-size: 14px;
+    font-weight: 400;
+    color: hsl(228, 34%, 66%);
+}
+
+.nostats > h1 {
+    color: #ffffff;
+    margin-top: 30px;
+}
+
+.iconstats >p {
+    margin-top: 30px;
+    color: hsl(163, 72%, 41%);
+}
