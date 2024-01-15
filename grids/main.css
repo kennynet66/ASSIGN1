@@ -1,0 +1,123 @@
+*{
+    font-family: 'Inter', sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    grid-area: nav;
+    margin-bottom: 40px;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+    width: 70px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: hsl(233, 8%, 79%);
+}
+a{
+    color: hsl(233, 8%, 79%);
+}
+.number{
+    color: hsl(233, 8%, 79%);
+}
+p{
+    font-size: 15px;
+    color: hsl(233, 8%, 79%);
+}
+button{
+    background-color: hsl(5, 85%, 63%);
+    border: none;
+    padding: 10px;
+    color: white;
+    text-transform: uppercase;
+    
+}
+
+.container{
+    padding: 10%;
+}
+
+.content{
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 50px;
+    grid-template-areas: 
+    "home home new"
+    "trending trending trending"
+    ;
+
+}
+
+.home{
+    grid-area: home;
+    display: grid;
+    gap: 50px;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas:
+    "web3-image web3-image "
+    "quote home-description"
+    ;
+}
+.home .web3-image{
+    grid-area: web3-image;
+}
+.home .quote{
+    grid-area: quote;
+}
+.home .description{
+    grid-area: home-description;
+}
+.new{
+    grid-area: new;
+    background-color: hsl(240, 100%, 5%);
+    color: white;
+    padding: 20px;
+}
+.new .title{
+    color: hsl(35, 77%, 62%);
+}
+.trending{
+    grid-area: trending;
+    display: grid;
+    gap: 50px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas: 
+    "trending-one trending-two trending-three"
+    ;
+}
+.trending .trending-image img{
+    height:100%;
+    width: 100%;
+}
+.trending-one{
+    grid-area: trending-one;
+}
+.trending-two{
+    grid-area: trending-two;
+}
+.trending-three{
+    grid-area: trending-three;
+}
+.trending-one,.trending-two,.trending-three{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 5px;
+    grid-template-rows: auto;
+    align-items: flex-end;
+    grid-template-areas: 
+    "trending-image trending-content"
+    ;
+}
+
+.trending-image{
+    grid-area: trending-image;
+}
+.trending-content{
+    grid-area: trending-content;
+}
