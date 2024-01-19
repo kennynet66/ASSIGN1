@@ -1,0 +1,31 @@
+Guidelines 
+Submit a .txt file to Daniel via Email, include the questions and their solutions 
+Submit on time (by 11:30)  
+ 
+Questions 
+1.Given a string return a new string with the reversed order of character
+ 
+e.g.  teach2Give => returns evig2hcaet
+ 
+2.  write a function that count the number of vowels in a sentence 
+ 
+e.g.  “Hello there “ =>  returns 4 
+ 
+3. Using a Prompt allow user to enter numbers separated by commas then print the sum of the numbers  
+ 
+4. PALINDROME –A palindrome is a word, number, phrase, or other sequence of characters which reads the same backward as forward  
+Write a program that checks whether a word is a palindrome or not.  
+Examples of a palindromes  
+(race car) 
+ 
+5. Given an array and chunk size divide the array into subarrays where each subarray is of length is the chunk size. 
+e.g.  
+//([1,2,3,3,4,5,6,7],3)  ===[ [ 1, 2, 3 ], [ 3, 4, 5 ], [ 6, 7 ] ] 
+//([1,2,3,5,6,7],1) ===[ [ 1 ], [ 2 ], [ 3 ], [ 5 ], [ 6 ], [ 7 ] ] 
+6.  Given an integer, return an integer that is reverse ordering the numbers 
+e.g. 
+// 500 = 5 
+// -56 = -65 
+// -90 = -9 
+// 91  = 19 
+ 

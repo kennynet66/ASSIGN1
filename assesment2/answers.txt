@@ -1,0 +1,80 @@
+1.Given a string return a new string with the reversed order of character
+
+    function reverseString(word) {
+        return word.split('').reverse('').join('')
+    }
+
+    console.log(reverseString("Teach2give"))
+
+2.  write a function that count the number of vowels in a sentence
+
+    function vowelCount(word) {
+        word = word.split('');
+        let count = 0;
+        word.forEach((letter) => {
+            if (letter == "a" || letter == 'e' || letter == 'i' || letter == 'o' || letter == 'u') {
+                count += 1;
+            }
+        })
+        return count;
+    }
+
+    console.log(vowelCount("Hello there"));
+
+3. Using a Prompt allow user to enter numbers separated by commas then print the sum of the numbers  
+
+    let inputString = prompt('Enter numbers separated by commas:');
+    let numbersArray = inputString.split(',').map(Number);
+    let sum = numbersArray.reduce((acc, num) => acc + num, 0);
+    console.log(sum);
+
+4. Write a program that checks whether a word is a palindrome or not.
+
+
+    function palindrome(theWord) {
+        let reversedWord = theWord.split('').reverse('').join('');
+        
+        if(reversedWord == theWord){
+            return (`${theWord} is a palindrome`)
+        } else {
+            return (`${theWord} is not a palindrome`)
+        }
+
+    }
+
+    console.log(palindrome("civic"))
+
+5. Given an array and chunk size divide the array into subarrays where each subarray is of length is the chunk size. 
+
+    function chunkArray(arr, chunkSize) {
+        if (chunkSize <= 0) {
+            return "Chunk size should be greater than 0.";
+        }
+
+        let chunks = [];
+        for (let i = 0; i < arr.length; i += chunkSize) {
+            chunks.push(arr.slice(i, i + chunkSize));
+        }
+
+        return chunks;
+    }
+    console.log(chunkArray([1, 2, 3, 3, 4, 5, 6, 7], 3));
+    console.log(chunkArray([1, 2, 3, 5, 6, 7], 1));
+
+6.  Given an integer, return an integer that is reverse ordering the numbers 
+
+    function reverseNum(num) {
+        let numString = num.toString();
+        let reversedString = numString.split('').reverse().join('');
+        let reversedNum = parseInt(reversedString);
+        if (num < 0) {
+            reversedNum = -reversedNum;
+        }
+
+        return reversedNum;
+    }
+
+    console.log(reverseNum(500));
+    console.log(reverseNum(-56));
+    console.log(reverseNum(-90));
+    console.log(reverseNum(91));
