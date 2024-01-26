@@ -12,7 +12,7 @@
     <div class="main">
         <div class="container">
             <nav>
-                <div class="logo">manir</div>
+                <div class="logo">Manir</div>
                 <ul>
                     <li><a href="#" target="_blank">Home</a>
                     </li>
@@ -28,11 +28,16 @@
                     </div>
                     <div class="inputfield">
                         <label for="project-description">Project Description:</label><br>
-                        <input type="text" id="project-description" placeholder="Project Name">
+                        <input type="text" id="project-description" placeholder="Project Name" spellcheck="true">
                         <div class="projectDescriptionError" id="error"></div>
                     </div>
                     <div class="inputfield">
-                        <label for="deadline">Deadline:</label><br>
+                        <label for="start-date">Start Date:</label><br>
+                        <input type="date" id="start-date">
+                        <div class="startDateError" id="error"></div>
+                    </div>
+                    <div class="inputfield">
+                        <label for="deadline">End date:</label><br>
                         <input type="date" id="deadline">
                         <div class="deadlineError" id="error"></div>
                     </div>
@@ -46,7 +51,7 @@
                         </select>
                         <div class="assignedToError" id="error"></div>
                     </div>
-                    <input type="submit" value="create project">
+                    <input type="submit" value="Create Project">
                 </form>
             </div><hr>
                 <div class="displayTasks">

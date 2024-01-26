@@ -75,9 +75,15 @@ a:hover {
     margin: 2%;
 }
 
-.inputfield >input {
+.inputfield >input{
     padding: 10px;
 }
+
+[type="date"] {
+    width: 100%;
+}
+
+
 
 #project-form > input {
     background-color: orangered;
@@ -95,7 +101,7 @@ select {
     width: 100%;
 }
 
-input {
+input, [type="date"] {
     margin: 1%;
 }
 
@@ -128,6 +134,10 @@ input {
     padding: 10px;
     color: #ffffff;
     cursor: pointer;
+}
+
+.card>button:hover {
+    background-color: rgb(233, 4, 4);
 }
 
 @media (max-width: 1000px) {
