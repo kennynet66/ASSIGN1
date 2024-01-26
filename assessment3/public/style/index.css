@@ -1,0 +1,131 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    background-color: #f2f2f2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 100vh;
+    max-height: max-content;
+}
+
+.container {
+    width: 80vw;
+    background-color: #dbdbdb;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+a {
+    text-decoration: none;
+    background-color: orangered;
+    padding: 10px;
+    color: #fff;
+    border-radius: 5px;
+}
+
+a:hover {
+    background-color: orange;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#error {
+    color: red;
+}
+
+.formcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#project-form {
+    padding: 15px;
+    background-color: #ffffff;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.inputfield{
+    width: 100%;
+    margin: 2%;
+}
+
+.inputfield >input {
+    padding: 10px;
+}
+
+#project-form > input {
+    background-color: orangered;
+    border: none;
+    padding: 10px;
+    margin: 2%;
+    color: #ffffff;
+}
+
+#project-form >input:hover {
+    background-color: orange;
+}
+select {
+    padding: 10px;
+    width: 100%;
+}
+
+input {
+    margin: 1%;
+}
+
+.displayTasks {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    padding: 10px;
+    height: max-content;
+    gap: 20px;
+}
+
+.card {
+    background-color: #f2f2f2;
+    padding: 10px;
+    width: max-content;
+    border-top: 5px solid orangered;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card:hover {
+    background-color: #dbdbdb;
+}
+.card >button {
+    background-color: red;
+    border: none;
+    padding: 10px;
+    color: #ffffff;
+    cursor: pointer;
+}
+

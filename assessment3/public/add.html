@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project management</title>
+    <link rel="stylesheet" href="./style/index.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <nav>
+                <div class="logo">Project Management</div>
+                <ul>
+                    <li><a href="./index.html" target="_blank"><ion-icon name="arrow-back-outline"></ion-icon> Back</a>
+                    </li>
+                </ul>
+            </nav>
+            <hr>
+            <div class="formcontainer">
+                <form id="project-form">
+                    <div class="inputfield">
+                        <label for="project-name">Project Name:</label><br>
+                        <input type="text" id="project-name" placeholder="Project Name">
+                        <div class="projectNameError" id="error"></div>
+                    </div>
+                    <div class="inputfield">
+                        <label for="project-description">Project Description:</label><br>
+                        <input type="text" id="project-description" placeholder="Project Name">
+                        <div class="projectDescriptionError" id="error"></div>
+                    </div>
+                    <div class="inputfield">
+                        <label for="deadline">Deadline:</label><br>
+                        <input type="date" id="deadline">
+                        <div class="deadlineError" id="error"></div>
+                    </div>
+                    <div class="inputfield">
+                        <label for="assignedto">Assigned to:</label><br>
+                        <select name="" id="assignedto">
+                            <option value="">--assigned to--</option>
+                            <option value="Kenedy Maina">Kenedy Maina</option>
+                            <option value="John Doe">John Doe</option>
+                            <option value="Jane Doe">Jane Doe</option>
+                        </select>
+                        <div class="assignedToError" id="error"></div>
+                    </div>
+                    <input type="submit" value="create project">
+                </form>
+            </div><hr>
+                <div class="displayTasks">
+                    <!-- <div class="card">
+                        <h3 class="title">Title</h3>
+                        <p class="desc">This is the description</p>
+                        <h3 class="deadline">22/02/2024</h3>
+                        <h3 class="assign">Kenedy maina</h3>
+                        <button class="delete">DELETE</button>
+                    </div> -->
+                </div>
+        </div>
+    </div>
+    <script src="../dist/index.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
