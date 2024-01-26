@@ -17,7 +17,6 @@ let projectArr = [];
 window.onload = () => {
     let data = localStorage.getItem("product");
     data = JSON.parse(data);
-    console.log(data);
     data.forEach((item) => {
         projectArr.push(item);
         Project.createcard(projectArr);
@@ -105,7 +104,7 @@ class newProject {
                 assign.textContent = `Assigned to: ${item.assignedTo}`;
                 let del = document.createElement('button');
                 del.className = "delete";
-                del.textContent = "DELETE";
+                del.textContent = "Delete";
                 del.addEventListener('click', () => {
                     this.deleteProject(index);
                 });

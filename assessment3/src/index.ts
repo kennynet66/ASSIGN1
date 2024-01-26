@@ -27,7 +27,6 @@ let projectArr: project[] = []
 window.onload = () => {
     let data:any = localStorage.getItem("product");
     data = JSON.parse(data)
-    console.log(data);
     
     data.forEach((item:any) => {
         projectArr.push(item);
@@ -126,7 +125,7 @@ class newProject {
 
                 let del = document.createElement('button');
                 del.className = "delete"
-                del.textContent = "DELETE";
+                del.textContent = "Delete";
                 del.addEventListener('click', () => {
                     this.deleteProject(index)
                 })

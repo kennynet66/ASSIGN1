@@ -76,6 +76,7 @@ a:hover {
 }
 
 .inputfield >input{
+    margin: 2%;
     padding: 10px;
 }
 
@@ -118,7 +119,9 @@ input, [type="date"] {
 .card {
     background-color: #f2f2f2;
     padding: 10px;
-    width: max-content;
+    /* width: max-content; */
+    max-width: 300px;
+    justify-content: space-between;
     border-top: 5px solid orangered;
     display: flex;
     flex-direction: column;

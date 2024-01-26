@@ -12,4 +12,11 @@
 - Project name
 - Who to do the project
 - Project description
+- Start Date
 - Deadline
+
+## Done Features
+
+- It allows the user to create a new project
+- It allows the user to delete a done project card
+- The user can view all cards
