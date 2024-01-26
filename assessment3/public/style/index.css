@@ -106,6 +106,7 @@ input {
     padding: 10px;
     height: max-content;
     gap: 20px;
+    justify-content: space-around;
 }
 
 .card {
@@ -129,3 +130,8 @@ input {
     cursor: pointer;
 }
 
+@media (max-width: 1000px) {
+    .container {
+        width: 100vw;
+    }
+}
