@@ -50,12 +50,18 @@ nav {
 
 #note {
     border-radius: 10px;
+    /* border: none; */
+    /* max-width: 380px; */
     padding: 10px;
 }
 
 .note-form {
-    max-width: 428px;
+    max-width: 400px;
     padding: 10px;
+}
+
+textarea {
+    max-width: inherit;
 }
 
 .note-title {
@@ -75,6 +81,7 @@ nav {
     color: #ffffff;
     padding: 10px;
     max-width: 300px;
+    min-width: 250px;
 }
 
 .edit,
@@ -111,4 +118,10 @@ nav {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
+}
+
+@media (max-width: 1000px) {
+    .container {
+        width: 100vw;
+    }
 }

@@ -3,7 +3,7 @@ let noteForm = document.querySelector('.note-form') as HTMLFormElement;
 let noteTitle = document.querySelector('#note-title') as HTMLInputElement;
 let note = document.querySelector('#note') as HTMLInputElement;
 let displayNotes = document.querySelector('#display') as HTMLDivElement;
-
+let createButton = document.querySelector('.title') as HTMLButtonElement;
 // Load the errors
 let noteError = document.querySelector('.error') as HTMLDivElement;
 
@@ -13,12 +13,11 @@ interface note {
     note: string;
 }
 
-let noteArr: note[] = []
+let noteArr: note[] = [];
 
 // Load the local storage
 window.onload = () => {
     let data = save.getNotes();
-    console.log(data);
     
     if (data) {
         data.forEach((el:any) => {
@@ -46,6 +45,8 @@ noteForm.addEventListener('submit', (e) => {
             title: noteTitle.value.trim(),
             note: note.value.trim()
         }
+        note.value ="";
+        noteTitle.value = "";
         noteArr.push(newNote);
         save.saveNote();
         display.displayNote();
@@ -97,6 +98,9 @@ class displays extends localSaves {
                 let edit = document.createElement('div')
                 edit.className = "edit";
                 edit.textContent = "Edit"
+                edit .addEventListener('click',()=> {
+                    this.updateNote(index);
+                })
                 
                 buttons.appendChild(del);
                 buttons.appendChild(edit);
@@ -107,7 +111,7 @@ class displays extends localSaves {
                 card.appendChild(buttons)
                 
                 displayNotes.appendChild(card);
-            })
+            });
         } else {
             displayNotes.textContent = "You have no Notes"
         }
@@ -117,6 +121,22 @@ class displays extends localSaves {
         noteArr.splice(note,1);
         this.saveNote();
         this.displayNote();
+    }
+
+    updateNote(index:number) {
+        let selectedNote = noteArr[index]
+        console.log(selectedNote);
+        
+        noteTitle.value = selectedNote.title
+        note.value = selectedNote.note
+        if (selectedNote) {
+            let updatedNote = {
+                id: selectedNote.id,
+                title: selectedNote.title,
+                note: selectedNote.note
+            }
+            noteArr[index] = updatedNote; // Update the note at the specified index
+        }        
     }
 }
 
