@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/index.css">
+    <title>Notify</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <ion-icon name="leaf-outline"></ion-icon>NOTIFY
+            </div>
+            <div class="actions">
+            </div>
+        </nav>
+        <div class="content">
+            <Form class="note-form">
+                <div class="inputDiv">
+                    <label for="note-title">Note title:</label> <br>
+                    <input type="text" name="title" class="note-title" id="note-title">
+                </div>
+                <div class="inputDiv">
+                    <label for="note">Your note:</label>
+                    <textarea name="note" id="note" cols="50" rows="10" style="resize: none;"></textarea>
+                </div>
+                <button class="title" style="display: flex; align-items: center; gap: 5px;">Create <ion-icon
+                        name="add-outline"></ion-icon></button>
+                        <div class="error"></div>
+            </Form><hr>
+            <div class="display-notes">
+                <h4>Your Notes</h4>
+                <div id="display">
+                    <!-- <div class="card">
+                        <h4 class="note-title">Title</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum id dolore optio soluta necessitatibus accusantium vel ullam neque amet nemo!</p>
+                        <div class="buttons">
+                            <div class="delete" >Delete</div>
+                            <div class="edit">Edit</div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../dist/index.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</html>
