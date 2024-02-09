@@ -1,0 +1,3 @@
+CREATE TABLE Notes(id VARCHAR(100), title VARCHAR(200), content VARCHAR(1500), createdAt VARCHAR(50))
+
+SELECT * FROM Notes

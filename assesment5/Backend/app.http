@@ -1,0 +1,31 @@
+### Get a new note
+POST http://localhost:3000/note/newnote
+Content-Type: application/json
+
+{
+    "title": "Hello",
+    "content": "This is a new note"
+}
+
+### Get all notes
+
+GET  http://localhost:3000/note
+
+
+### Get note by ID
+
+GET  http://localhost:3000/note/0eb93295-ca83-4073-86f3-368c7843e7b9
+
+### UPDATE NOTE
+
+PUT  http://localhost:3000/note/update/0eb93295-ca83-4073-86f3-368c7843e7b9
+Content-Type: application/json
+
+{
+    "title": "Hello",
+    "content": "This is an updated note"
+}
+
+### Delete Note
+
+DELETE   http://localhost:3000/note/delete/0eb93295-ca83-4073-86f3-368c7843e7b9
